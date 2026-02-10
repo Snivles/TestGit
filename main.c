@@ -1,13 +1,13 @@
 //Постановка задачи Дан массив чисел нужно найти количество уникальных значений(или количество первых
 //вхождений каждого значения.
-//{5,5,7,3,3,2,2,1,1,10} => countEL = 6
-
+//szz = 10 {5,5,7,3,3,2,2,1,1,10} => countEL = 6
+//szz = 6 {1,2,3,4,5,6} => countEL =
 #include <stdio.h>
 #include <stdbool.h>
-#define szz 10
+#define szz 6
 int main()
 {
-    int array[szz] = {5,5,7,3,3,2,2,1,1,10};
+    int array[szz] = {1,2,3,4,5,6};
     int max = array[0];
     for(int i=1;i < szz;i++)
         if(array[i] > max) max = array[i];
